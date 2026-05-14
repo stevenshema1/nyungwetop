@@ -3,9 +3,7 @@ import canopy from "@/assets/tour-canopy.jpg";
 import waterfall from "@/assets/gallery-waterfall.jpg";
 import tea from "@/assets/pkg/tea.jpg";
 import wellness from "@/assets/pkg/wellness.jpg";
-// Note: using placeholder since chat image attachments cannot be automatically saved to files.
-// Please drag and drop your image into src/assets/pkg/ and update this import!
-import culture from "@/assets/gallery-hands.jpg"; 
+import culture from "@/assets/pkg/culture.jpg"; 
 import birds from "@/assets/pkg/birds.jpg";
 import night from "@/assets/pkg/night.jpg";
 

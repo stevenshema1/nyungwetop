@@ -134,8 +134,18 @@ export function HeroScene({
         </div>
       ))}
 
-      {/* Simple black overlay for text visibility */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Tinted gradient + grain */}
+      <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/60 via-forest-deep/35 to-forest-deep/85" />
+
+      {/* 3D layer */}
+      <Canvas
+        camera={{ position: [0, 0, 6], fov: 55 }}
+        className="absolute inset-0 !pointer-events-none"
+        gl={{ antialias: true, alpha: true }}
+      >
+        <ambientLight intensity={0.6} />
+        <Particles />
+      </Canvas>
 
       {/* Slide indicator */}
       <div className="absolute bottom-8 right-8 z-20 flex gap-2">
